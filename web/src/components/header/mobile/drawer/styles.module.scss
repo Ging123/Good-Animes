@@ -1,0 +1,17 @@
+@import "@/styles/sizes.scss";
+
+.drawer_nav_container {
+  width:100vw;
+
+  @include vr-sm {
+    width:300px;
+  }
+}
+
+.list_item {
+  padding:5px;
+
+  span {
+    font-weight:600;
+  }
+}

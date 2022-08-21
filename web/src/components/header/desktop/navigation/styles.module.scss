@@ -1,0 +1,19 @@
+@import "@/styles/effects.scss";
+
+.ul {
+  align-items:center;
+  display:flex;
+  flex-direction:row;
+  padding:0px;
+  text-align:center;
+}
+
+.list {
+  padding-bottom:0px;
+  padding-top:0px;
+}
+
+.list_text {
+  @extend %get-main-color-on-hover;
+  font-weight:600;
+}

@@ -1,0 +1,25 @@
+%get-darker-on-hover {
+  cursor:pointer;
+
+  &:hover {
+    filter:brightness(90%);
+  }
+
+  &:active {
+    filter:brightness(80%);
+  }
+}
+
+%get-main-color-on-hover {
+  cursor:pointer;
+
+  &:hover {
+    color:var(--main-green);
+    filter:brightness(90%);
+  }
+
+  &:active {
+    color:var(--main-green);
+    filter:brightness(80%);
+  }
+}

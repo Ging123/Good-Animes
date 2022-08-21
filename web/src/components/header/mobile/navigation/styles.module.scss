@@ -1,0 +1,9 @@
+@import "@/styles/utils.scss";
+
+.container {
+  @include flex(row, center);
+}
+
+.list {
+  padding:0px;
+}

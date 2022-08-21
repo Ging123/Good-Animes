@@ -1,0 +1,24 @@
+@import "@/styles/effects.scss";
+@import "@/styles/sizes.scss";
+
+@import "@/styles/utils.scss";
+
+.container {
+  @include flex(row, center);
+}
+
+.search_input {
+
+  @include lg {
+    width:250px;
+  } 
+}
+
+.search_input_icon {
+  @extend %get-darker-on-hover;
+}
+
+.login {
+  @extend %get-darker-on-hover;
+  margin-left:20px;
+}
