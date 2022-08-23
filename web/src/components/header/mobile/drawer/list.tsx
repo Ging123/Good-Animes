@@ -79,7 +79,7 @@ const List = (props:props) => {
             <PersonIcon/>
           </ListItemIcon>
           <ListItemText>
-            login
+            Login
           </ListItemText>
         </ListItemButton>
       </ListItem>
