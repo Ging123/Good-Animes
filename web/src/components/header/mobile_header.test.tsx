@@ -6,7 +6,7 @@ import "@testing-library/jest-dom";
 
 describe("Test not logged mobile header", () => {
 
-  it("Must open the menu on click", async () => {
+  it("Must open the drawer on click", async () => {
     render(<HeaderMobile/>);
     const iconButton = screen.getByTestId("DehazeIcon");
 
@@ -19,7 +19,7 @@ describe("Test not logged mobile header", () => {
     const genresLink = screen.getByText("Genres");
     const loginLink = screen.getByText("Login");
 
-    const nav = [ subtitledLink, favoritesLink, genresLink, loginLink ];
+    const nav = [ dubbledLink, subtitledLink, favoritesLink, genresLink, loginLink ];
 
     for(const link of nav) {
       expect(link).toBeInTheDocument();

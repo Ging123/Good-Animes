@@ -4,3 +4,30 @@
   flex-direction:$direction;
   justify-content:$justify-content;
 }
+
+@mixin scroll-bar($color:null, $background:null, $height:2vw ,$width-type:null) {
+  scrollbar-color:$color $background;
+  scrollbar-width:$width-type;
+
+  &::-webkit-scrollbar {
+    height:$height;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$background;
+  }
+}
+
+%flex-row {
+  display:flex;
+  flex-direction:row;
+}
+
+%align-x {
+  left:50%;
+  transform:translateX(-50%);
+}

@@ -13,7 +13,7 @@ interface props {
 const Header = (props:props) => {
   
   return (
-    <AppBar className={ styles.header }>
+    <AppBar className={ styles.header } position="fixed">
       <Toolbar className={ styles.header_background }>
         <Container className={ styles.header_container }> 
           <Title/>

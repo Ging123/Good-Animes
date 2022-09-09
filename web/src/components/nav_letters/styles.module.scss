@@ -1,0 +1,31 @@
+@import "@/styles/effects.scss";
+@import "@/styles/sizes.scss";
+@import "@/styles/utils.scss";
+
+.list_container {
+  @include scroll-bar(var(--main-gray), null, 10px);
+  @extend %flex-row;
+  margin-top:60px;
+  overflow-x:hidden;
+  scrollbar-color:black;
+
+  &:hover {
+    overflow-x:scroll;
+  }
+
+  @include sm {
+    margin-top:80px;
+  }
+
+  @include lg {
+    overflow-x:hidden !important;
+  }
+}
+
+.list_item_text {
+  @extend %get-main-color-on-hover;
+  font-size:18px;
+  font-weight:600;
+  padding:5px 0px;
+  user-select:none;
+}

@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import theme from "../styles/theme";
 
 import "@/styles/globals.scss"; 
+import "swiper/css/bundle";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
