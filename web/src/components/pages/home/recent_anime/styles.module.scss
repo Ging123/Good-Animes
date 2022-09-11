@@ -1,3 +1,45 @@
+@import "@/styles/effects.scss";
+@import "@/styles/utils.scss";
+
 .container {
   margin-top:60px;
+}
+
+.anime_container {
+  @extend %get-darker-on-hover;
+  cursor:pointer;
+  position:relative;
+}
+
+.anime_image_container {
+  border-radius:10px;
+  height:200px;
+  overflow:hidden;
+  position:relative;
+
+  &::before {
+    background:linear-gradient(.509turn,rgba(9,9,9,.8) 10.21%,transparent 84.67%);
+    content:"";
+    height:100%;
+    position:absolute;
+    width:100%;
+  }
+
+  img {
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+
+  &:hover > .play_icon {
+    opacity:1;
+  }
+}
+
+.anime_name {
+  font-weight:600;
+  margin-left:2px;
+  margin-top:5px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }

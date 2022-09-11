@@ -1,3 +1,8 @@
+@function negative($value:0) {
+  $negative-value:calc($value * -1);
+  @return $negative-value;
+}
+
 @mixin flex($direction:null, $align-items:null, $justify-content:null) {
   align-items:$align-items;
   display:flex;
@@ -30,4 +35,10 @@
 %align-x {
   left:50%;
   transform:translateX(-50%);
+}
+
+%align-x-and-y {
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
 }

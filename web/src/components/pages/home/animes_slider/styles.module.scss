@@ -1,4 +1,5 @@
 @import "@/styles/effects.scss";
+@import "@/styles/utils.scss";
 
 .container {
   margin-top:50px;
@@ -28,16 +29,10 @@
     object-fit:cover;
     object-position:50% 50%;
   }
-}
 
-.anime_language {
-  background:#50c878a8;
-  border-radius:6px;
-  left:10px;
-  padding:5px 10px;
-  position:absolute;
-  top:10px;
-  z-index:1;
+  &:hover > .play_icon {
+    opacity:1;
+  }
 }
 
 .anime_name {

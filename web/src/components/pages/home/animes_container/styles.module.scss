@@ -1,6 +1,10 @@
 @import "@/styles/sizes.scss";
 @import "@/styles/utils.scss";
 
+@function get-in-the-middle-of-top-border($text-font-size:1.5rem) {
+  @return calc(negative($text-font-size) / 1.2)
+}
+
 .container {
   border:2px solid var(--main-green);
   border-radius:10px;
@@ -11,15 +15,16 @@
 .title {
   @extend %align-x;
   background:var(--main-black);
-  font-size:20px;
+  font-size:1.5rem;
+  margin:0px;
   padding:0px 30px;
   position:absolute;
-  top:-36px;
+  top:get-in-the-middle-of-top-border(1.5rem);
   white-space:nowrap;
 
   @include vr-sm {
-    font-size:24px;
-    top:-40px;
+    font-size:2.2rem;
+    top:get-in-the-middle-of-top-border(2.2rem);
   }
 
   @include sm {
