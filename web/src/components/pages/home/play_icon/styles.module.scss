@@ -1,0 +1,10 @@
+@import "@/styles/utils.scss";
+
+.play_icon {
+  @extend %align-x-and-y;
+  fill:var(--main-green);
+  font-size:70px;
+  opacity:0;
+  position:absolute;
+  transition:.3s opacity;
+}
